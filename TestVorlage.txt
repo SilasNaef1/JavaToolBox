@@ -1,0 +1,4 @@
+Wir machen eine Test-Klasse. 
+In dieser Test-Methode (Unter dem Main, wird beim Main initialisiert) werden alle Klassen, welche wir erstellt haben getestet. 
+
+Beispiel siehe Test Klasse

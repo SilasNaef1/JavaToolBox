@@ -7,6 +7,7 @@
  *  
  *  GitHubUrl: https://github.com/SilasNaef1/JavaToolBox.git
  *  Date: 13.03.1017
+ *  Method: Test
  *  LastChange: Jannis
  *  Author: Silas
  */

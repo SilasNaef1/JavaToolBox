@@ -1,0 +1,19 @@
+Klassen und Interfaces
+
+- Erster Buchstabe immer groß
+- "UpperCamelCase" anwenden
+- Für Klassen Nomen verwenden (Hund, Katze...)
+- Für Interfaces Adjektive verwenden (Essbar...)
+
+Methoden
+- erster Buchstabe immer klein.
+- "lowerCamelCase" anwenden.
+- Methodennamen sollten Kombinationen aus Verben und Nomen darstellen. Bsp.: getTasche(), fuelleTasche( ... )
+
+Variablen
+
+- wie bei Methoden "lowerCamelCase" und erster Buchstabe immer klein.
+- Konstanten[Bearbeiten]
+- Konstanten werden erzeugt, indem man Variablen static und final deklariert.
+- Sie werden nur in Großbuchstaben geschrieben und einzelne Worte werden durch Unterstrich voneinander getrennt.
+  Bsp.: MAX_MENGE

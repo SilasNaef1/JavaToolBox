@@ -8,5 +8,5 @@
  *  GitHubUrl: https://github.com/SilasNaef1/JavaToolBox.git
  *  Date: aktuelles Datum
  *  LastChange: ${user}
- *  Author ${user}
+ *  Author ${user}l
  */

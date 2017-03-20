@@ -7,7 +7,7 @@
  *  
  *  GitHubUrl: https://github.com/SilasNaef1/JavaToolBox.git
  *  Date: 20.03.2017
- *  Method: Test
+ *  Method: translateToMs, translateToKm
  *  LastChange: Dueen
  *  Author Dueen
  */

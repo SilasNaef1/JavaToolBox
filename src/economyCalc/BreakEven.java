@@ -29,11 +29,8 @@ public class BreakEven {
 		this.deckungsBeitrag = netto - varKosten;
 	}
 	
-	public double Nutzmeng(double fixeKosten, double netto, double varKosten){
-		this.fixeKosten = fixeKosten;
-		this.netto = netto;
-		this.varKosten = varKosten;
-		this.deckungsBeitrag = netto - varKosten;
+	public double Nutzmeng(){
+		
 		if (deckungsBeitrag != 0){
 			nutzMeng = fixeKosten / deckungsBeitrag;
 			return nutzMeng;
@@ -44,11 +41,15 @@ public class BreakEven {
 		
 	}
 	
-	public double Nutzwert(double netto, double nutzMeng){
-		this.netto = netto;
-		this.nutzMeng = nutzMeng;
-		nutzWert = nutzMeng * netto;
-		return nutzWert;
+	public double Nutzwert(){
+		if (nutzMeng != 0){
+			nutzWert = nutzMeng * netto;
+			return nutzWert;
+		}
+		else {
+			return 0;
+		}
+		
 		
 	}
 

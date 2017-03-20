@@ -24,3 +24,4 @@ Konstanten
 	*Konstanten werden erzeugt, indem man Variablen static und final deklariert.
 	*Sie werden nur in Großbuchstaben geschrieben und einzelne Worte werden durch Unterstrich voneinander getrennt.
 	*Bsp.: MAX_MENGE
+	Github: Graber

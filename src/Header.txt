@@ -6,8 +6,7 @@
  *  licenses restricting copying, distribution and decompilation.
  *  
  *  GitHubUrl: https://github.com/SilasNaef1/JavaToolBox.git
- *  Date: 13.03.2017
- *  Method: Test
+ *  Date: aktuelles Datum
  *  LastChange: ${user}
  *  Author ${user}
  */

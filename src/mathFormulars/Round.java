@@ -14,11 +14,13 @@ package mathFormulars;
 
 public class Round {
 	private static double startValue;
+	private static int decimalDigits;
 	private static double inCalc;
 	private static double result;
 	//Diese Methode wird von ausserhalb der Klasse aufgerufen
-	public static double RoundValue(double value, double decimalDigits) {
+	public static double RoundValue(double value, int decimaldigits) {
 		startValue = value;
+		decimalDigits = decimaldigits;
 		Calc(value);
 		return result;
 	}

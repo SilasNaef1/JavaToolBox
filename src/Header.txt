@@ -1,3 +1,4 @@
+
 /*
  * 	Copyright (c) 2017 IN2C
  *	All Rights Reserved
@@ -8,5 +9,4 @@
  *  GitHubUrl: https://github.com/SilasNaef1/JavaToolBox.git
  *  Date: aktuelles Datum
  *  LastChange: ${user}
- *  Author ${user}l
- */
+ *  Author ${user}

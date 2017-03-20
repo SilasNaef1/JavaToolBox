@@ -13,24 +13,30 @@
  */
 package dataParser;
 
-import java.util.Scanner;
-
 public class TranslatorKmhToMs {
 	
-	public static void translateToMs()
+	public static double translateToMs(double value)
 	{
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Bitte geben Sie Ihre Zahl an:\n");
-		double value = scan.nextDouble();
 		if(value<0)
 		{
-			System.out.println("\nUngültiger Wert!");
+			return 0;
 		}
 		else
 		{
-			System.out.println("\n"+value+" km/h entsprechen "+value/3.6+"m/s");
+			return value/3.6;
 		}
-		scan.close();
+	}
+	
+	public static double translateToKm(double value)
+	{
+		if(value<0)
+		{
+			return 0;
+		}
+		else
+		{
+			return value*3.6;
+		}
 	}
 
 }

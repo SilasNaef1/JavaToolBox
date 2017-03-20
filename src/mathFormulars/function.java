@@ -28,26 +28,33 @@ public class function {
 	
 	public static function linearFunction(double x1, double y1, double x2, double y2)
 	{
-		double a = (y2-y1)/(x2-x1);
-		double b = (x2*y1-x1*y2)/(x2-x1);
-		String result;
-		
-		if(b<=0)
+		if(x2==x1 && y2==y1)
 		{
-			if(b<0)
-			{
-				result = "y = "+a+"x - "+b;
-			}
-			else
-			{
-				result = "y = "+a+"x";
-			}
+			return null;
 		}
 		else
 		{
-			result = "y = "+a+"x + "+b;
+			double a = (y2-y1)/(x2-x1);
+			double b = (x2*y1-x1*y2)/(x2-x1);
+			String result;
+		
+			if(b<=0)
+			{
+				if(b<0)
+				{
+					result = "y = "+a+"x - "+b;
+				}
+				else
+				{
+					result = "y = "+a+"x";
+				}
+			}
+			else
+			{
+				result = "y = "+a+"x + "+b;
+			}
+			return new function(a,b,result);
 		}
-		return new function(a,b,result);
 	}
 
 }

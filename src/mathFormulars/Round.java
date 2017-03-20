@@ -13,17 +13,17 @@
 package mathFormulars;
 
 public class Round {
-	private double startValue;
-	private double inCalc;
-	private double result;
+	private static double startValue;
+	private static double inCalc;
+	private static double result;
 	//Diese Methode wird von ausserhalb der Klasse aufgerufen
-	public double RoundValue(double value) {
-		this.startValue = value;
+	public static double RoundValue(double value, double decimalDigits) {
+		startValue = value;
 		Calc(value);
 		return result;
 	}
 	//Diese Methode wird innerhalb der Klasse aufgerufen um zu Runden.
-	private void Calc(double value) {
+	private static void Calc(double value) {
 		inCalc = value * 100;
 		inCalc = Math.round(inCalc);
 		value = inCalc / 100;

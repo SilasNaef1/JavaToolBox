@@ -11,17 +11,19 @@
  *  LastChange: Jannis
  *  Author: Silas
  */
+import cryptography .*;
+import dataParser .*;
+import economyCalc .*;
+import mathFormulars.*;
 
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("Hello World");
-		//Comment By Silas
+		Test();
 	}
 	
-	public void Test(){
-		
+	public static void Test(){
+		dataParser.TranslatorKmhToMs.translateToMs();
 	}
 
 }

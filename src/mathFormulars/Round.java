@@ -14,6 +14,19 @@ package mathFormulars;
 
 public class Round {
 	private double startValue;
+	private double inCalc;
 	private double result;
-	public void RoundValue(double value) {
+	//Diese Methode wird von ausserhalb der Klasse aufgerufen
+	public double RoundValue(double value) {
+		this.startValue = value;
+		Calc(value);
+		return result;
+	}
+	//Diese Methode wird innerhalb der Klasse aufgerufen um zu Runden.
+	private void Calc(double value) {
+		inCalc = value * 100;
+		inCalc = Math.round(inCalc);
+		value = inCalc / 100;
+		result = value;
+	}
 }

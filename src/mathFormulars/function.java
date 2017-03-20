@@ -28,11 +28,25 @@ public class function {
 	
 	public static function linearFunction(double x1, double y1, double x2, double y2)
 	{
-		
 		double a = (y2-y1)/(x2-x1);
 		double b = (x2*y1-x1*y2)/(x2-x1);
-		String result = "y = "+a+"x"+b;
+		String result;
 		
+		if(b<=0)
+		{
+			if(b<0)
+			{
+				result = "y = "+a+"x - "+b;
+			}
+			else
+			{
+				result = "y = "+a+"x";
+			}
+		}
+		else
+		{
+			result = "y = "+a+"x + "+b;
+		}
 		return new function(a,b,result);
 	}
 

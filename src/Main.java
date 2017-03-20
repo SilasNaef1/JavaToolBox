@@ -23,7 +23,7 @@ public class Main {
 	}
 	
 	public static void Test(){
-		dataParser.TranslatorKmhToMs.translateToMs();
+		
 	}
 
 }

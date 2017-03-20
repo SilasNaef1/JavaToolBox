@@ -8,16 +8,6 @@
  *  GitHubUrl: https://github.com/SilasNaef1/JavaToolBox.git
  *  Date: 13.03.2017
  *  Method: Test
- *  LastChange: Jannis
- *  Author: Silas
+ *  LastChange: ${user}
+ *  Author ${user}
  */
-
-public class Main {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("Hello World");
-
-	}
-
-}

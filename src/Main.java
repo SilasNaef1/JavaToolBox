@@ -19,5 +19,9 @@ public class Main {
 		System.out.println("Hello World");
 		//Comment By Silas
 	}
+	
+	public void Test(){
+		
+	}
 
 }

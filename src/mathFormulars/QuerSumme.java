@@ -20,7 +20,7 @@ public class QuerSumme {
 	    
 
 	    
-	    //while (zahl > 9) {
+	    
 	      
 	      // Berechnung der einfachen Quersumme:
 	     int quersumme = 0;

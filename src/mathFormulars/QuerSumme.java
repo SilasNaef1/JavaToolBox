@@ -14,7 +14,7 @@ package mathFormulars;
 
 public class QuerSumme {
 	
-	static int QuersummeInt(int zahl) {
+	public static int QuersummeInt(int zahl) {
 	    // Die zahl wird solange durch ihre Quersumme
 	    // ersetzt, bis das Ergebnis einstellig ist
 

@@ -70,6 +70,11 @@ public class Main {
 		System.out.println(StringToInt.ConverStringToInt("123"));
 		System.out.println(StringToInt.ConverStringToInt("Test"));
 		
+		System.out.println("Testfall Quersumme");
+		System.out.println("************************************");
+		System.out.println(QuerSumme.QuersummeInt(121212));
+		
+		
 		
 
 		

@@ -25,13 +25,9 @@ public class Main {
 	
 	public static void Test()
 	{
-<<<<<<< HEAD
 		Function test = mathFormulars.Function.linearFunction(6, -1, 2, 2);
-=======
-		function test = mathFormulars.function.linearFunction(6, -1, 2, 2);
-		
-		
->>>>>>> aa8177aac4828f10a44d4fcc8dbb764a7b3fb6e3
+
+	
 		System.out.println("Testfälle Dreieck!");
 		System.out.println("______________________________________________");
 		

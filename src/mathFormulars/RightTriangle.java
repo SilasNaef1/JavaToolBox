@@ -48,6 +48,7 @@ public class RightTriangle {
 		if(isTriangleRight(a,b,c))
 		{
 			scope = a+b+c;
+			
 			return scope;						
 		}
 		return 0;

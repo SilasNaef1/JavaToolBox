@@ -59,5 +59,17 @@ public class QuerSumme {
 	  }
 	
 	
+	public static boolean Test()
+	{
+		int resultat = Quersumme(123);
+		int erwResultat = 6;
+		if(resultat == erwResultat)
+		{
+			return true;
+		}
+		return false;
+	}
+	
+	
 
 }

@@ -13,7 +13,7 @@
  */
 import java.math.RoundingMode;
 
-import cryptography .*;
+//import cryptography .*;
 import dataParser .*;
 import economyCalc .*;
 import mathFormulars.*;
@@ -79,7 +79,13 @@ public class Main {
 		
 		System.out.println("Testfall Quersumme");
 		System.out.println("************************************");
-		System.out.println(QuerSumme.Quersumme(121212));
+		if(mathFormulars.QuerSumme.Test()) {
+			System.out.println("Quersumme: " + "Passed!");
+		} else {
+			System.out.println("Quersumme: " + "Failed!");
+		}
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle Quersumme");
 		
 		
 		System.out.println("Testfall Runden");

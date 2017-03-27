@@ -54,6 +54,7 @@ public class Round {
 		Multiplier = multiplier;
 		//comment
 	}
+	//test
 	public static boolean Test() {
 		double result1 = RoundValue(10.37666, 3);
 		double result2 = RoundValue(5.47, 1);

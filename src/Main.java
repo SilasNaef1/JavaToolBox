@@ -69,7 +69,17 @@ public class Main {
 		System.out.println("************************************");
 		System.out.println(StringToInt.ConverStringToInt("123"));
 		
-		mathFormulars.Round.Test();
+		if(mathFormulars.Round.Test()) {
+			System.out.println("Runden: " + "Passed!");
+		} else {
+			System.out.println("Runden: " + "Failed!");
+		}
+		if(mathFormulars.ValueAddedTaxVAT.Test()) {
+			System.out.println("Mehrwertsteuer: " + "Passed!");
+		} else {
+			System.out.println("Mehrwertsteuer: " + "Failed!");
+		}
+		
 
 		
 

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
  * 	Copyright (c) 2017 IN2C
  *	All Rights Reserved
@@ -16,8 +15,10 @@ package mathFormulars;
 
 public class Function {
 	
-	private double a,b,c;
-	private String function;
+	protected double a,b;
+	protected String function;
+	
+	public Function(){}
 	
 	public Function(double a, double b, String result)
 	{
@@ -25,14 +26,6 @@ public class Function {
 		this.b = b;
 		this.function = result;
 		System.out.println(result);
-	}
-	
-	public Function(double a, double b,double c, String result)
-	{
-		this.a = a;
-		this.b = b;
-		this.c = c;
-		this.function = result;
 	}
 	
 	public static Function linearFunction(double x1, double y1, double x2, double y2)
@@ -66,36 +59,27 @@ public class Function {
 		}
 	}
 	
-	public static Function squareFunction(double x1, double y1, double x2, double y2, double x3, double y3)
-	{
-			double a = ;
-			double b = ;
-			double c = ;
-			String result;
-		
-			if(b<=0)
-			{
-				if(b<0)
-				{
-					result = "y = "+a+"x"+b;
-				}
-				else
-				{
-					result = "y = "+a+"x";
-				}
-			}
-			else
-			{
-				result = "y = "+a+"x + "+b;
-			}
-			return new Function(a,b,c,result);
-	}
-	
 	public static boolean testLinearFunction()
 	{
 		Function func = linearFunction(-4,-1,2,-10);
 		System.out.println(func.function);
 		return true;
 	}
+
+	public double getA() {
+		return a;
+	}
+	
+	public void setA(double a) {
+		this.a = a;
+	}
+
+	public double getB() {
+		return b;
+	}
+
+	public void setB(double b) {
+		this.b = b;
+	}	
 
 }

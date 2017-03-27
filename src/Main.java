@@ -13,7 +13,7 @@
  */
 import java.math.RoundingMode;
 
-//import cryptography .*;
+import cryptography .*;
 import dataParser .*;
 import economyCalc .*;
 import mathFormulars.*;
@@ -49,16 +49,6 @@ public class Main {
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle StringToInt");
 		
-		System.out.println("Testfall Quersumme");
-		System.out.println("************************************");
-		if(mathFormulars.QuerSumme.Test()) {
-			System.out.println("Quersumme: " + "Passed!");
-		} else {
-			System.out.println("Quersumme: " + "Failed!");
-		}
-		System.out.println("______________________________________________");
-		System.out.println("Ende Testfälle Quersumme");
-		
 		
 		System.out.println("Testfall Runden");
 		System.out.println("************************************");
@@ -69,6 +59,7 @@ public class Main {
 		}
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle Runden");
+		
 		System.out.println("Testfall Mehrwertsteuer");
 		System.out.println("************************************");
 		if(mathFormulars.ValueAddedTaxVAT.Test()) {
@@ -79,6 +70,15 @@ public class Main {
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle Runden");
 		
+		System.out.println("Testfall CaesarCode");
+		System.out.println("************************************");
+		if(cryptography.CaesarCode.Test()) {
+			System.out.println("CaesarCode: " + "Passed!");
+		} else {
+			System.out.println("CaesarCode: " + "Failed!");
+		}
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle CaesarCode");
 		
 		System.out.println("Testfall BreakEven");
 		System.out.println("************************************");
@@ -90,6 +90,18 @@ public class Main {
 		}
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle BreakEven");
+
+		
+		System.out.println("Testfall Quersumme");
+		System.out.println("************************************");
+		if(mathFormulars.QuerSumme.Test()) {
+			System.out.println("Quersumme: " + "Passed!");
+		} else {
+			System.out.println("Quersumme: " + "Failed!");
+		}
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle Quersumme");
+
 		
 		if(	TranslatorTemperature.test()){
 			System.out.println("TranslatorTemperatureTest Passed!");

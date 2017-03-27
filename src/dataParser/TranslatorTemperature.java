@@ -12,7 +12,7 @@
  */
 package dataParser;
 
-public class TrasnslatorTemperature {
+public class TranslatorTemperature {
 	
 	/*public void translateTemperature()
 	{

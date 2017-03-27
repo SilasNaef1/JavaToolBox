@@ -69,12 +69,17 @@ public class Main {
 		
 		System.out.println("Testfall StringToInt");
 		System.out.println("************************************");
-		System.out.println(StringToInt.ConverStringToInt("123"));
-		System.out.println(StringToInt.ConverStringToInt("Test"));
+		if(StringToInt.Test()) {
+			System.out.println("StringToInt: " + "Passed!");
+		} else {
+			System.out.println("StringToInt: " + "Failed!");
+		}
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle StringToInt");
 		
 		System.out.println("Testfall Quersumme");
 		System.out.println("************************************");
-		System.out.println(QuerSumme.QuersummeInt(121212));
+		System.out.println(QuerSumme.Quersumme(121212));
 		
 		
 		System.out.println("Testfall Runden");
@@ -95,6 +100,18 @@ public class Main {
 		}
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle Runden");
+		
+		
+		System.out.println("Testfall BreakEven");
+		System.out.println("************************************");
+		BreakEven rechner = new BreakEven();
+		if(rechner.Test()) {
+			System.out.println("BreakEven: " + "Passed!");
+		} else {
+			System.out.println("BreakEven: " + "Failed!");
+		}
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle BreakEven");
 
 		
 

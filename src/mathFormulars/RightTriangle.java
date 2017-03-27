@@ -103,5 +103,9 @@ public class RightTriangle {
 		}
 		return 0;
 	}
+	
+	public static boolean test(){
+		return true;
+	}
 
 }

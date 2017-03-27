@@ -15,17 +15,17 @@ package mathFormulars;
 public class RightTriangle {
 	
 	//Declare all Properties a Triangle can have
-	private double area;
-	private double scope;
-	private double height;
-	private double corner;
-	private final double gamma =  90;
-	private double c;
-	private double kathete;
+	private static double area;
+	private static double scope;
+	private static double height;
+	private static double corner;
+	private static final double gamma =  90;
+	private static double c;
+	private static double kathete;
 	
 	public RightTriangle(){}
 	
-	public double calcArea(double a, double b)
+	public static double calcArea(double a, double b)
 	{	
 		if(a != 0 && b != 0){
 			area = (a * b)/2;
@@ -34,7 +34,7 @@ public class RightTriangle {
 		return 0;
 	}
 	
-	private boolean isTriangleRight(double a, double b, double c){
+	private static boolean isTriangleRight(double a, double b, double c){
 		
 		if((Round.RoundValue((a*a)+(b*b), 2)) == Round.RoundValue((c*c), 2)){
 			return true;
@@ -43,7 +43,7 @@ public class RightTriangle {
 
 	}
 	
-	public double calcScope(double a, double b, double c){
+	public static double calcScope(double a, double b, double c){
 	
 		if(isTriangleRight(a,b,c))
 		{
@@ -54,7 +54,7 @@ public class RightTriangle {
 
 	}
 	
-	public double calcHeight(double a, double b, double c){
+	public static double calcHeight(double a, double b, double c){
 		
 		if(isTriangleRight(a, b, c)){
 			if(a != 0 && b != 0 && c != 0){
@@ -66,7 +66,7 @@ public class RightTriangle {
 
 	}
 	
-	public double calcCorner(double alpha){
+	public static double calcCorner(double alpha){
 		
 		if(alpha != 0){
 			corner = 180 - gamma - alpha;
@@ -77,7 +77,7 @@ public class RightTriangle {
 		return 0;
 	}
 	
-	public double calcHypotenuse(double a, double b){
+	public static double calcHypotenuse(double a, double b){
 
 		if(a != 0 && b != 0){
 			
@@ -91,7 +91,7 @@ public class RightTriangle {
 		return 0;
 	}
 	
-	public double calcKathete(double a, double c){
+	public static double calcKathete(double a, double c){
 
 		if(a > c){
 			return 0;

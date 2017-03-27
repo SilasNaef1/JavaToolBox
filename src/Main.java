@@ -11,6 +11,8 @@
  *  LastChange: Jannis
  *  Author: Silas
  */
+import java.math.RoundingMode;
+
 import cryptography .*;
 import dataParser .*;
 import economyCalc .*;
@@ -75,6 +77,25 @@ public class Main {
 		System.out.println(QuerSumme.QuersummeInt(121212));
 		
 		
+		System.out.println("Testfall Runden");
+		System.out.println("************************************");
+		if(mathFormulars.Round.Test()) {
+			System.out.println("Runden: " + "Passed!");
+		} else {
+			System.out.println("Runden: " + "Failed!");
+		}
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle Runden");
+		System.out.println("Testfall Mehrwertsteuer");
+		System.out.println("************************************");
+		if(mathFormulars.ValueAddedTaxVAT.Test()) {
+			System.out.println("Mehrwertsteuer: " + "Passed!");
+		} else {
+			System.out.println("Mehrwertsteuer: " + "Failed!");
+		}
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle Runden");
+
 		
 
 		

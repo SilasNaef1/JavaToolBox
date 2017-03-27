@@ -20,7 +20,7 @@ public class ValueAddedTaxVAT {
 	private static double calcAddedVAT;
 	private static double calcVAT(double value, double VAT) {
 		startValue = value;
-		VATrate = VAT;
+		VATrate = VAT / 100;
 		Result = value * VATrate;
 		return Result;
 	}
@@ -32,5 +32,30 @@ public class ValueAddedTaxVAT {
 		calcVATValue = calcVAT(value, VAT);
 		calcAddedVAT = startValue+calcVATValue;
 		return calcAddedVAT;
+	}
+	//test
+	public static boolean Test() {
+		double result1 = calcVATValue(100, 8);
+		double result2 = calcVATValue(100, 15);
+		double result3 = calcAddedVAT(100, 8);
+		double result4 = calcAddedVAT(100, 15);
+		
+		double expectedResult1 = 8;
+		double expectedResult2 = 15;
+		double expectedResult3 = 108;
+		double expectedResult4 = 115;
+		if(result1 == expectedResult1) {
+			if(result2 == expectedResult2) {
+				if(result3 == expectedResult3) {
+					if(result4 == expectedResult4) {
+						return true;
+					}
+					return false;
+				}
+				return false;
+			}
+			return false;
+		}
+		return false;
 	}
 }

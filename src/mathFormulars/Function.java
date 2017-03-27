@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * 	Copyright (c) 2017 IN2C
  *	All Rights Reserved

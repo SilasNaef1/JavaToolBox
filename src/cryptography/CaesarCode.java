@@ -25,6 +25,7 @@ public class CaesarCode {
         }
         return cryptArray;
     }
+    //test
     public static boolean Test() {
     	char[] array1 = "DASISTEINTEXT".toCharArray();
     	char[] resultat1 = encrypt(7, array1);

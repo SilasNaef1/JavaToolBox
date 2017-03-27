@@ -25,7 +25,7 @@ public class Main {
 	
 	public static void Test()
 	{
-		function test = mathFormulars.function.linearFunction(6, -1, 2, 2);
+		Function test = mathFormulars.Function.linearFunction(6, -1, 2, 2);
 		System.out.println("Testfälle Dreieck!");
 		System.out.println("______________________________________________");
 		

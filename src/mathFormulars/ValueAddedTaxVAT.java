@@ -33,7 +33,7 @@ public class ValueAddedTaxVAT {
 		calcAddedVAT = startValue+calcVATValue;
 		return calcAddedVAT;
 	}
-	
+	//test
 	public static boolean Test() {
 		double result1 = calcVATValue(100, 8);
 		double result2 = calcVATValue(100, 15);

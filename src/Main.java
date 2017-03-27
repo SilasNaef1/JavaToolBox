@@ -68,7 +68,7 @@ public class Main {
 		System.out.println("Testfall StringToInt");
 		System.out.println("************************************");
 		System.out.println(StringToInt.ConverStringToInt("123"));
-		
+		//test Runden/TAX
 		if(mathFormulars.Round.Test()) {
 			System.out.println("Runden: " + "Passed!");
 		} else {

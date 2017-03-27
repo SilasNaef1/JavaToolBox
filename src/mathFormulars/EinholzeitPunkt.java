@@ -17,31 +17,26 @@ import java.util.Date;
 public class EinholzeitPunkt 
 {
 	
-	public static Date einholzeitPunkt(Date car1, Date car2)
+	public static double einholzeitPunktInSec(double car1, double geschwcar1InMProSec, double geschwcar2InMProSec, double car2)
 	{
-		if(car1 == null || car2 == null)
+		if(geschwcar1InMProSec == 0 || geschwcar2InMProSec == 0 )
 		{
-			return null;		
+			return 0;		
 		}
 		
-		if(car1.getTime() > car2.getTime())
+		if(geschwcar1InMProSec > geschwcar2InMProSec)
 		{
-			return calculateEinholzeitpunkt(car1, car2);
+			return calculateEinholzeitpunkt(car1, geschwcar1InMProSec, geschwcar2InMProSec, car2);
 		}
 		else
 		{
-			return calculateEinholzeitpunkt(car2, car1);
-			
+			return calculateEinholzeitpunkt(car2, geschwcar2InMProSec, geschwcar2InMProSec, car1);
 		}
 	}
 	
-	private static Date calculateEinholzeitpunkt(Date grösser, Date kleiner)
+	private static double calculateEinholzeitpunkt(double grösser, double geschw1, double geschw2, double kleiner)
 	{
-		
-		
-		
-		return new Date();
-		
+		return (geschw1 - geschw2)/(grösser - kleiner);
 	}
 
 }

@@ -108,6 +108,7 @@ public class Main {
 		}
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle BreakEven");
+
 		
 		System.out.println("Testfall Quersumme");
 		System.out.println("************************************");
@@ -120,8 +121,13 @@ public class Main {
 		System.out.println("Ende Testfälle Quersumme");
 
 		
-
-		
+		if(	TranslatorTemperature.test()){
+			System.out.println("TranslatorTemperatureTest Passed!");
+		}
+		else{
+			System.out.println("TranslatorTemperatureTest Failed!");
+		}
+	
 
 	}
 

@@ -63,7 +63,11 @@ public class Main {
 		System.out.println(triangle.calcKathete(3, 5));		    //Erwartet 4 Berechnet die fehlende Kathete vom Dreieck
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle Dreieck!");
-
+		
+		
+		System.out.println("Testfall StringToInt");
+		System.out.println("************************************");
+		System.out.println(StringToInt.ConverStringToInt("123"));
 		
 		
 	}

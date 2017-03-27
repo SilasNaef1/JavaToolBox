@@ -36,7 +36,7 @@ public class RightTriangle {
 	
 	private boolean isTriangleRight(double a, double b, double c){
 		
-		if(((a*a)+(b*b)) == (c*c)){
+		if((Round.RoundValue((a*a)+(b*b), 2)) == Round.RoundValue((c*c), 2)){
 			return true;
 		}
 		return false;

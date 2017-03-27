@@ -13,12 +13,12 @@
  */
 package mathFormulars;
 
-public class function {
+public class Function {
 	
 	private double a,b,c;
 	private String function;
 	
-	public function(double a, double b, String result)
+	public Function(double a, double b, String result)
 	{
 		this.a = a;
 		this.b = b;
@@ -26,7 +26,7 @@ public class function {
 		System.out.println(result);
 	}
 	
-	public static function linearFunction(double x1, double y1, double x2, double y2)
+	public static Function linearFunction(double x1, double y1, double x2, double y2)
 	{
 		if(x2==x1 && y2==y1)
 		{
@@ -53,8 +53,15 @@ public class function {
 			{
 				result = "y = "+a+"x + "+b;
 			}
-			return new function(a,b,result);
+			return new Function(a,b,result);
 		}
+	}
+	
+	public static boolean Test()
+	{
+		Function func = linearFunction(-4,2,-1,2);
+		System.out.println(func.function);
+		return true;
 	}
 
 }

@@ -54,4 +54,24 @@ public class Round {
 		Multiplier = multiplier;
 		//comment
 	}
+	public static boolean Test() {
+		double result1 = RoundValue(10.37666, 3);
+		double result2 = RoundValue(5.47, 1);
+		double result3 = RoundValue(3.889717279, 0);
+		
+		double expectedResult1 = 10.377;
+		double expectedResult2 = 5.5;
+		double expectedResult3 = 4;
+		if(result1 == expectedResult1) {
+			if(result2 == expectedResult2) {
+				if(result3 == expectedResult3) {
+					return true;
+				}
+				return false;
+			}
+			return false;
+		}
+		return false;
+		
+	}
 }

@@ -11,6 +11,8 @@
  *  LastChange: Jannis
  *  Author: Silas
  */
+import java.math.RoundingMode;
+
 import cryptography .*;
 import dataParser .*;
 import economyCalc .*;
@@ -67,7 +69,7 @@ public class Main {
 		System.out.println("************************************");
 		System.out.println(StringToInt.ConverStringToInt("123"));
 		
-		
+		mathFormulars.Round.Test();
 
 		
 

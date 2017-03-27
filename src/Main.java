@@ -13,7 +13,7 @@
  */
 import java.math.RoundingMode;
 
-import cryptography .*;
+//import cryptography .*;
 import dataParser .*;
 import economyCalc .*;
 import mathFormulars.*;
@@ -69,12 +69,23 @@ public class Main {
 		
 		System.out.println("Testfall StringToInt");
 		System.out.println("************************************");
-		System.out.println(StringToInt.ConverStringToInt("123"));
-		System.out.println(StringToInt.ConverStringToInt("Test"));
+		if(StringToInt.Test()) {
+			System.out.println("StringToInt: " + "Passed!");
+		} else {
+			System.out.println("StringToInt: " + "Failed!");
+		}
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle StringToInt");
 		
 		System.out.println("Testfall Quersumme");
 		System.out.println("************************************");
-		System.out.println(QuerSumme.QuersummeInt(121212));
+		if(mathFormulars.QuerSumme.Test()) {
+			System.out.println("Quersumme: " + "Passed!");
+		} else {
+			System.out.println("Quersumme: " + "Failed!");
+		}
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle Quersumme");
 		
 		
 		System.out.println("Testfall Runden");
@@ -95,6 +106,22 @@ public class Main {
 		}
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle Runden");
+<<<<<<< HEAD
+=======
+		
+		
+		System.out.println("Testfall BreakEven");
+		System.out.println("************************************");
+		BreakEven rechner = new BreakEven();
+		if(rechner.Test()) {
+			System.out.println("BreakEven: " + "Passed!");
+		} else {
+			System.out.println("BreakEven: " + "Failed!");
+		}
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle BreakEven");
+
+>>>>>>> 0a567de2cf5250e753f095ec6db832db2ffd80da
 		
 		
 

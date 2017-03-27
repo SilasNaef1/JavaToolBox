@@ -26,5 +26,25 @@ public class StringToInt {
 			return 0;
 		}
 	}
+	
+	public static boolean Test()
+	{
+		int resultat = ConverStringToInt("123");
+		int resultat2 = ConverStringToInt("Test");
+		
+		int erwResultat = 123;
+		int erwResultat2 = 0;
+		
+		if(resultat == erwResultat){
+			if(resultat2 == erwResultat2){
+				return true;
+				
+			}
+		}
+		else{
+			return false;
+		}
+		return false;
+	}
 
 }

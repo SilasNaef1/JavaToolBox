@@ -29,6 +29,15 @@ public class BreakEven {
 		this.deckungsBeitrag = netto - varKosten;
 	}
 	
+	/**
+	 * 
+	 */
+	public BreakEven() {
+		// TODO Auto-generated constructor stub
+	}
+
+	
+
 	public double Nutzmeng(){
 		
 		if (deckungsBeitrag != 0){
@@ -52,10 +61,37 @@ public class BreakEven {
 		
 		
 	}
+	
+	
+	
+	public boolean Test(){
+		fixeKosten = 15000;
+		netto = 3.50;
+		varKosten = 0.50;
+		deckungsBeitrag = 3;
+		double resultat = Nutzmeng();
+		double resultat2 = Nutzwert();
+		double erwResultat = 5000;
+		double erwResultat2 = 17500;
+		if(resultat == erwResultat){
+			if(resultat2 == erwResultat2){
+				return true;
+				
+			}
+		}
+		else{
+			return false;
+		}
+		return false;
+
+	}
 
 	/**
 	 * @return the fixeKosten
 	 */
+	
+	
+	
 	public double getFixeKosten() {
 		return fixeKosten;
 	}

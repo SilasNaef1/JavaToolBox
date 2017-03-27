@@ -106,8 +106,6 @@ public class Main {
 		}
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle Runden");
-<<<<<<< HEAD
-=======
 		
 		
 		System.out.println("Testfall BreakEven");
@@ -121,8 +119,6 @@ public class Main {
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle BreakEven");
 
->>>>>>> 0a567de2cf5250e753f095ec6db832db2ffd80da
-		
 		
 
 	}

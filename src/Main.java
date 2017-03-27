@@ -25,7 +25,7 @@ public class Main {
 	
 	public static void Test()
 	{
-		Function test = mathFormulars.Function.linearFunction(6, -1, 2, 2);
+		mathFormulars.Function.testLinearFunction();
 
 	
 		System.out.println("Testfälle Dreieck!");
@@ -67,6 +67,8 @@ public class Main {
 		
 		System.out.println("Testfall StringToInt");
 		System.out.println("************************************");
+		
+		
 		System.out.println(StringToInt.ConverStringToInt("123"));
 		System.out.println(StringToInt.ConverStringToInt("Test"));
 		

@@ -26,6 +26,14 @@ public class Function {
 		System.out.println(result);
 	}
 	
+	public Function(double a, double b,double c, String result)
+	{
+		this.a = a;
+		this.b = b;
+		this.c = c;
+		this.function = result;
+	}
+	
 	public static Function linearFunction(double x1, double y1, double x2, double y2)
 	{
 		if(x2==x1 && y2==y1)
@@ -42,7 +50,7 @@ public class Function {
 			{
 				if(b<0)
 				{
-					result = "y = "+a+"x - "+b;
+					result = "y = "+a+"x"+b;
 				}
 				else
 				{
@@ -57,9 +65,34 @@ public class Function {
 		}
 	}
 	
-	public static boolean Test()
+	public static Function squareFunction(double x1, double y1, double x2, double y2, double x3, double y3)
 	{
-		Function func = linearFunction(-4,2,-1,2);
+			double a = ;
+			double b = ;
+			double c = ;
+			String result;
+		
+			if(b<=0)
+			{
+				if(b<0)
+				{
+					result = "y = "+a+"x"+b;
+				}
+				else
+				{
+					result = "y = "+a+"x";
+				}
+			}
+			else
+			{
+				result = "y = "+a+"x + "+b;
+			}
+			return new Function(a,b,c,result);
+	}
+	
+	public static boolean testLinearFunction()
+	{
+		Function func = linearFunction(-4,-1,2,-10);
 		System.out.println(func.function);
 		return true;
 	}

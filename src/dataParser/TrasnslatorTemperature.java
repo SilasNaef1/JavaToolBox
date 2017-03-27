@@ -12,10 +12,7 @@
  */
 package dataParser;
 
-import java.util.Scanner;
-
 public class TrasnslatorTemperature {
-	Scanner s = new Scanner(System.in);
 	
 	/*public void translateTemperature()
 	{
@@ -61,17 +58,27 @@ public class TrasnslatorTemperature {
 		}
 	}*/
 	
-	public double celsiusInFahrenheit(double grad)
+	public static double celsiusInFahrenheit(double grad)
 	{
 		double fahrenheit;
 		fahrenheit = grad * 1.8 + 32;
 		return fahrenheit;
 	}
 	
-	public double fahrenheitInCelsius(double fahrenheit)
+	public static double fahrenheitInCelsius(double fahrenheit)
 	{
 		double grad;
 		grad = (fahrenheit - 32) / 1.8;
 		return grad;
+	}
+	
+	public static boolean test()
+	{
+		
+		if(celsiusInFahrenheit(0) != 32)
+		{
+			return false;
+		}
+		return true;
 	}
 }

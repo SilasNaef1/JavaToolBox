@@ -95,9 +95,7 @@ public class Main {
 		}
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle Runden");
-
 		
-
 		
 
 	}

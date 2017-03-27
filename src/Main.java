@@ -70,18 +70,24 @@ public class Main {
 		System.out.println("Testfall StringToInt");
 		System.out.println("************************************");
 		System.out.println(StringToInt.ConverStringToInt("123"));
-		//test Runden/TAX
+		System.out.println("Testfall Runden");
+		System.out.println("************************************");
 		if(mathFormulars.Round.Test()) {
 			System.out.println("Runden: " + "Passed!");
 		} else {
 			System.out.println("Runden: " + "Failed!");
 		}
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle Runden");
+		System.out.println("Testfall Mehrwertsteuer");
+		System.out.println("************************************");
 		if(mathFormulars.ValueAddedTaxVAT.Test()) {
 			System.out.println("Mehrwertsteuer: " + "Passed!");
 		} else {
 			System.out.println("Mehrwertsteuer: " + "Failed!");
 		}
-		System.out.println(StringToInt.ConverStringToInt("Test"));
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle Runden");
 		
 
 		

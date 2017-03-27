@@ -77,16 +77,6 @@ public class Main {
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle StringToInt");
 		
-		System.out.println("Testfall Quersumme");
-		System.out.println("************************************");
-		if(mathFormulars.QuerSumme.Test()) {
-			System.out.println("Quersumme: " + "Passed!");
-		} else {
-			System.out.println("Quersumme: " + "Failed!");
-		}
-		System.out.println("______________________________________________");
-		System.out.println("Ende Testfälle Quersumme");
-		
 		
 		System.out.println("Testfall Runden");
 		System.out.println("************************************");
@@ -118,6 +108,16 @@ public class Main {
 		}
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle BreakEven");
+		
+		System.out.println("Testfall Quersumme");
+		System.out.println("************************************");
+		if(mathFormulars.QuerSumme.Test()) {
+			System.out.println("Quersumme: " + "Passed!");
+		} else {
+			System.out.println("Quersumme: " + "Failed!");
+		}
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle Quersumme");
 
 		
 

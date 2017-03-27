@@ -20,19 +20,20 @@ public class QuerSumme {
 	    
 
 	    
-	    while (zahl > 9) {
+	    //while (zahl > 9) {
 	      
 	      // Berechnung der einfachen Quersumme:
-	      int quersumme = 0;
-	      do {        
-	        quersumme = quersumme + zahl % 10;
-	        zahl = zahl / 10;
-	      } while (zahl > 0);
+	     int quersumme = 0;
+	     do {        
+	       quersumme = quersumme + zahl % 10;
+	       zahl = zahl / 10;
+	     } while (zahl > 0);
 
-	      zahl = quersumme;
-	    }
-
-	    return zahl;
+	     zahl = quersumme;
+	      
+	      
+	     return zahl;
+	    
 	  }
 	
 	
@@ -42,27 +43,24 @@ public class QuerSumme {
 	    	return 0;
 	    }
 
-	    
-	    while (zahl > 9) {
+	   
 	      
-	      // Berechnung der einfachen Quersumme:
-	      int quersumme = 0;
-	      do {        
-	        quersumme = quersumme + zahl % 10;
-	        zahl = zahl / 10;
-	      } while (zahl > 0);
+	     // Berechnung der einfachen Quersumme:
+	     int quersumme = 0;
+	     do {        
+	       quersumme = quersumme + zahl % 10;
+	       zahl = zahl / 10;
+	     } while (zahl > 0);
 
-	      zahl = quersumme;
-	    }
-
-	    return zahl;
+	     zahl = quersumme;
+	     return zahl;
 	  }
 	
 	
 	public static boolean Test()
 	{
-		int resultat = Quersumme(123);
-		int erwResultat = 6;
+		int resultat = Quersumme(123456789);
+		int erwResultat = 45;
 		if(resultat == erwResultat)
 		{
 			return true;

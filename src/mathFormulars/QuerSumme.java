@@ -17,11 +17,6 @@ import dataParser.StringToInt;
 public class QuerSumme {
 	
 	public static int Quersumme(int zahl) {
-	    
-
-	    
-	    
-	      
 	      // Berechnung der einfachen Quersumme:
 	     int quersumme = 0;
 	     do {        
@@ -35,16 +30,11 @@ public class QuerSumme {
 	     return zahl;
 	    
 	  }
-	
-	
 	public static int Quersumme(String StringZahl) {
-	    int zahl = StringToInt.ConverStringToInt(StringZahl);
+	    int zahl = StringToInt.ConvertStringToInt(StringZahl);
 	    if(zahl==0){
 	    	return 0;
 	    }
-
-	   
-	      
 	     // Berechnung der einfachen Quersumme:
 	     int quersumme = 0;
 	     do {        
@@ -55,8 +45,6 @@ public class QuerSumme {
 	     zahl = quersumme;
 	     return zahl;
 	  }
-	
-	
 	public static boolean Test()
 	{
 		int resultat = Quersumme(123456789);

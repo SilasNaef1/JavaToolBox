@@ -8,7 +8,7 @@
  *  GitHubUrl: https://github.com/SilasNaef1/JavaToolBox.git
  *  Date: 13.03.2017
  *  Method: Test
- *  LastChange: Jannis
+ *  LastChange: Dueen
  *  Author: Silas
  */
 import java.math.RoundingMode;
@@ -17,6 +17,7 @@ import cryptography .*;
 import dataParser .*;
 import economyCalc .*;
 import mathFormulars.*;
+import runtimeCalculations.calculateRuntime;
 
 public class Main {
 
@@ -27,10 +28,15 @@ public class Main {
 	
 	public static void Test()
 	{
+		mathFormulars.Function.testLinearFunction();
+
+	
+		System.out.println("Testfälle Dreieck!");
+		System.out.println("______________________________________________");
 		Function test = mathFormulars.Function.linearFunction(6, -1, 2, 2);
 		
 	
-		
+		calculateRuntime.setStartTime();
 		System.out.println("Testfall Rechtwinkliges Dreieck");
 		System.out.println("************************************");
 		if(RightTriangle.test()) {
@@ -41,6 +47,14 @@ public class Main {
 	
 		System.out.println("Testfall StringToInt");
 		System.out.println("************************************");
+		
+		
+		System.out.println(StringToInt.ConverStringToInt("123"));
+		System.out.println(StringToInt.ConverStringToInt("Test"));
+		
+		System.out.println("Testfall Quersumme");
+		System.out.println("************************************");
+		System.out.println(QuerSumme.QuersummeInt(121212));
 		if(StringToInt.Test()) {
 			System.out.println("StringToInt: " + "Passed!");
 		} else {
@@ -72,11 +86,13 @@ public class Main {
 		
 		System.out.println("Testfall CaesarCode");
 		System.out.println("************************************");
+		
 		if(cryptography.CaesarCode.Test()) {
 			System.out.println("CaesarCode: " + "Passed!");
 		} else {
 			System.out.println("CaesarCode: " + "Failed!");
 		}
+		
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle CaesarCode");
 		
@@ -101,15 +117,13 @@ public class Main {
 		}
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle Quersumme");
-
-		
 		if(	TranslatorTemperature.test()){
 			System.out.println("TranslatorTemperatureTest Passed!");
 		}
 		else{
 			System.out.println("TranslatorTemperatureTest Failed!");
 		}
-		
+
 		System.out.println("Testfall Datenanlyse");
 		System.out.println("************************************");
 		Datenanalyse analyse = new Datenanalyse(5, 16, 1, 2, 6);
@@ -121,6 +135,33 @@ public class Main {
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle Datenanalyse");
 	
+		calculateRuntime.setEndTime();
+		calculateRuntime.Output();
+		
+		System.out.println("Testfall LinearFunction");
+		System.out.println("************************************");
+		if(	mathFormulars.Function.testLinearFunction()){
+			System.out.println("LinearFunctionTest Passed!");
+		}
+		else{
+			System.out.println("LinearFunctionTest failed!");
+		}
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle LinearFunction");
+		
+		System.out.println("Testfall TranslatorKmhToMs");
+		System.out.println("************************************");
+		if(	dataParser.TranslatorKmhToMs.testTranslation()){
+			System.out.println("Translator test Passed!");
+		}
+		else{
+			System.out.println("Translator test failed!");
+		}
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle TranslatorKmhToMs");
+		
+		
+
 
 	}
 

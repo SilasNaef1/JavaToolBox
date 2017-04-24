@@ -17,6 +17,7 @@ import cryptography .*;
 import dataParser .*;
 import economyCalc .*;
 import mathFormulars.*;
+import runtimeCalculations.calculateRuntime;
 
 public class Main {
 
@@ -38,7 +39,7 @@ public class Main {
 >>>>>>> f6fc55f6373b905b40a3113616b31199dff07856
 		
 	
-		
+		calculateRuntime.setStartTime();
 		System.out.println("Testfall Rechtwinkliges Dreieck");
 		System.out.println("************************************");
 		if(RightTriangle.test()) {
@@ -91,11 +92,13 @@ public class Main {
 		
 		System.out.println("Testfall CaesarCode");
 		System.out.println("************************************");
+		
 		if(cryptography.CaesarCode.Test()) {
 			System.out.println("CaesarCode: " + "Passed!");
 		} else {
 			System.out.println("CaesarCode: " + "Failed!");
 		}
+		
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle CaesarCode");
 		
@@ -120,15 +123,14 @@ public class Main {
 		}
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle Quersumme");
-
-		
 		if(	TranslatorTemperature.test()){
 			System.out.println("TranslatorTemperatureTest Passed!");
 		}
 		else{
 			System.out.println("TranslatorTemperatureTest Failed!");
 		}
-	
+		calculateRuntime.setEndTime();
+		calculateRuntime.Output();
 
 	}
 

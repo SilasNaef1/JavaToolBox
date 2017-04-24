@@ -27,7 +27,7 @@ public class Main {
 	
 	public static void Test()
 	{
-		Function test = mathFormulars.Function.linearFunction(6, -1, 2, 2);
+		//Function test = mathFormulars.Function.linearFunction(6, -1, 2, 2);
 		
 	
 		
@@ -109,7 +109,15 @@ public class Main {
 		else{
 			System.out.println("TranslatorTemperatureTest Failed!");
 		}
-	
+		System.out.println("Testfall Einholzeitunkt");
+		System.out.println("************************************");
+		if(mathFormulars.EinholzeitPunkt.test()) {
+			System.out.println("Einholzeitpunkt: " + "Passed!");
+		} else {
+			System.out.println("Einholzeitpunkt: " + "Failed!");
+		}
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle Quersumme");
 
 	}
 

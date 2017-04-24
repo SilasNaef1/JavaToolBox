@@ -17,7 +17,7 @@ public class StringToInt {
 	private static String string;
 	
 	
-	public static int ConverStringToInt(String stringEingabe){
+	public static int ConvertStringToInt(String stringEingabe){
 		string = stringEingabe;
 		if (string.matches("[0-9]+")){
 			return Integer.parseInt(string);
@@ -29,8 +29,8 @@ public class StringToInt {
 	
 	public static boolean Test()
 	{
-		int resultat = ConverStringToInt("123");
-		int resultat2 = ConverStringToInt("Test");
+		int resultat = ConvertStringToInt("123");
+		int resultat2 = ConvertStringToInt("Test");
 		
 		int erwResultat = 123;
 		int erwResultat2 = 0;

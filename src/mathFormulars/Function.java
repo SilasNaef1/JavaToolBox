@@ -64,8 +64,16 @@ public class Function {
 	public static boolean testLinearFunction()
 	{
 		Function func = linearFunction(-4,-1,2,-10);
-		System.out.println(func.function);
-		return true;
+		if(func.getA() == -1.5)
+		{
+			System.out.println(func.function);
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+		
 	}
 
 	public double getA() {

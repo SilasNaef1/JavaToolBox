@@ -38,5 +38,20 @@ public class TranslatorKmhToMs {
 			return value*3.6; //return translated value
 		}
 	}
+	
+	public static boolean testTranslation() //Simple test method
+	{
+		double km = translateToMs(3.6);
+		double ms = translateToKm(1.0);
+		
+		if(km==1.0 && ms == 3.6)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
 
 }

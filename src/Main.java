@@ -8,7 +8,7 @@
  *  GitHubUrl: https://github.com/SilasNaef1/JavaToolBox.git
  *  Date: 13.03.2017
  *  Method: Test
- *  LastChange: Jannis
+ *  LastChange: Dueen
  *  Author: Silas
  */
 import java.math.RoundingMode;
@@ -28,15 +28,12 @@ public class Main {
 	
 	public static void Test()
 	{
-<<<<<<< HEAD
 		mathFormulars.Function.testLinearFunction();
 
 	
 		System.out.println("Testfälle Dreieck!");
 		System.out.println("______________________________________________");
-=======
 		Function test = mathFormulars.Function.linearFunction(6, -1, 2, 2);
->>>>>>> f6fc55f6373b905b40a3113616b31199dff07856
 		
 	
 		calculateRuntime.setStartTime();
@@ -50,7 +47,6 @@ public class Main {
 	
 		System.out.println("Testfall StringToInt");
 		System.out.println("************************************");
-<<<<<<< HEAD
 		
 		
 		System.out.println(StringToInt.ConverStringToInt("123"));
@@ -59,7 +55,6 @@ public class Main {
 		System.out.println("Testfall Quersumme");
 		System.out.println("************************************");
 		System.out.println(QuerSumme.QuersummeInt(121212));
-=======
 		if(StringToInt.Test()) {
 			System.out.println("StringToInt: " + "Passed!");
 		} else {
@@ -67,7 +62,6 @@ public class Main {
 		}
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle StringToInt");
->>>>>>> f6fc55f6373b905b40a3113616b31199dff07856
 		
 		
 		System.out.println("Testfall Runden");
@@ -131,6 +125,30 @@ public class Main {
 		}
 		calculateRuntime.setEndTime();
 		calculateRuntime.Output();
+		
+		System.out.println("Testfall LinearFunction");
+		System.out.println("************************************");
+		if(	mathFormulars.Function.testLinearFunction()){
+			System.out.println("LinearFunctionTest Passed!");
+		}
+		else{
+			System.out.println("LinearFunctionTest failed!");
+		}
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle LinearFunction");
+		
+		System.out.println("Testfall TranslatorKmhToMs");
+		System.out.println("************************************");
+		if(	dataParser.TranslatorKmhToMs.testTranslation()){
+			System.out.println("Translator test Passed!");
+		}
+		else{
+			System.out.println("Translator test failed!");
+		}
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle TranslatorKmhToMs");
+		
+		
 
 	}
 

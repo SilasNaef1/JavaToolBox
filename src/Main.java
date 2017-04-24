@@ -109,6 +109,17 @@ public class Main {
 		else{
 			System.out.println("TranslatorTemperatureTest Failed!");
 		}
+		
+		System.out.println("Testfall Datenanlyse");
+		System.out.println("************************************");
+		Datenanalyse analyse = new Datenanalyse(5, 16, 1, 5, 2);
+		if(analyse.Test()) {
+			System.out.println("BreakEven: " + "Passed!");
+		} else {
+			System.out.println("BreakEven: " + "Failed!");
+		}
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle BreakEven");
 	
 
 	}

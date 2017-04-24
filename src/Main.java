@@ -112,14 +112,14 @@ public class Main {
 		
 		System.out.println("Testfall Datenanlyse");
 		System.out.println("************************************");
-		Datenanalyse analyse = new Datenanalyse(5, 16, 1, 5, 2);
+		Datenanalyse analyse = new Datenanalyse(5, 16, 1, 2, 6);
 		if(analyse.Test()) {
-			System.out.println("BreakEven: " + "Passed!");
+			System.out.println("Datenanalyse: " + "Passed!");
 		} else {
-			System.out.println("BreakEven: " + "Failed!");
+			System.out.println("Datenanalyse: " + "Failed!");
 		}
 		System.out.println("______________________________________________");
-		System.out.println("Ende Testfälle BreakEven");
+		System.out.println("Ende Testfälle Datenanalyse");
 	
 
 	}

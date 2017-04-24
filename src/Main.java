@@ -28,17 +28,12 @@ public class Main {
 	
 	public static void Test()
 	{
-<<<<<<< HEAD
-		//Function test = mathFormulars.Function.linearFunction(6, -1, 2, 2);
-=======
 		mathFormulars.Function.testLinearFunction();
 
 	
 		System.out.println("Testfälle Dreieck!");
 		System.out.println("______________________________________________");
-		Function test = mathFormulars.Function.linearFunction(6, -1, 2, 2);
->>>>>>> 7fa1d00a2c3c4229501c4183f211857deed37c6f
-		
+		Function test = mathFormulars.Function.linearFunction(6, -1, 2, 2);		
 	
 		calculateRuntime.setStartTime();
 		System.out.println("Testfall Rechtwinkliges Dreieck");
@@ -127,7 +122,6 @@ public class Main {
 		else{
 			System.out.println("TranslatorTemperatureTest Failed!");
 		}
-<<<<<<< HEAD
 		System.out.println("Testfall Einholzeitunkt");
 		System.out.println("************************************");
 		if(mathFormulars.EinholzeitPunkt.test()) {
@@ -137,7 +131,6 @@ public class Main {
 		}
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle Quersumme");
-=======
 
 		System.out.println("Testfall Datenanlyse");
 		System.out.println("************************************");
@@ -174,10 +167,6 @@ public class Main {
 		}
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle TranslatorKmhToMs");
-		
-		
-
->>>>>>> 7fa1d00a2c3c4229501c4183f211857deed37c6f
 
 	}
 

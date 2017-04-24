@@ -13,20 +13,23 @@
  */
 package mathFormulars;
 
-public class QuadraticFunction extends Function{
+public class QuadraticFunction extends Function{ //extends the existing class Function
 	private double c;
 	
-	public QuadraticFunction(double a, double b,double c, String result)
+	public QuadraticFunction(double a, double b,double c)
 	{
-		super(a,b,result);
+		this.a = a;
+		this.b = b;
 		this.c = c;
 	}
 	
-	public static QuadraticFunction squareFunction(double x1, double y1, double x2, double y2, double x3, double y3)
+	// Due to missing time, this class couldn't be finished
+	
+	/*public static QuadraticFunction squareFunction(double x1, double y1, double x2, double y2, double x3, double y3)
 	{
 			/*P1(x1|y1) , P2(x2|y2) , P3(x3|y3)*/
 			
-			/* Gleichungssystem */
+			/* Gleichungssystem */ /*
 			if(Math.pow(x1, 2)<Math.pow(x2, 2))
 			{
 				y2 -= y1;
@@ -70,7 +73,6 @@ public class QuadraticFunction extends Function{
 			double b = ;
 			double c = ;
 			String result;
-		
 			if(b<=0)
 			{
 				if(b<0)
@@ -87,6 +89,6 @@ public class QuadraticFunction extends Function{
 				result = "y = "+a+"x + "+b;
 			}
 			return new QuadraticFunction(a,b,c,result);
-	}
+	} */
 
 }

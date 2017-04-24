@@ -15,27 +15,27 @@ package dataParser;
 
 public class TranslatorKmhToMs {
 	
-	public static double translateToMs(double value)
+	public static double translateToMs(double value) //Static method to translate from Km/h to M/s
 	{
-		if(value<0)
+		if(value<0) // If the speed is negative
 		{
-			return 0;
+			return 0; //return 0, because negative speed is impossible
 		}
 		else
 		{
-			return value/3.6;
+			return value/3.6; //return translated value
 		}
 	}
 	
-	public static double translateToKm(double value)
+	public static double translateToKm(double value) //Static method to translate from M/s to Km/h
 	{
-		if(value<0)
+		if(value<0) // If the speed is negative
 		{
-			return 0;
+			return 0; //return 0, because negative speed is impossible
 		}
 		else
 		{
-			return value*3.6;
+			return value*3.6; //return translated value
 		}
 	}
 

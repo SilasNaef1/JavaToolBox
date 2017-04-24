@@ -35,4 +35,52 @@ public class PrimCheck {
 			return false;
 		}
 	}
+	
+	
+	public boolean test()
+	{
+		if(23 == 1 || 23 == 0) //0, 1, 2 sind Ausnahmen
+		{
+			return false;
+		}
+		if(23 == 2)
+		{
+			return false;
+		}
+		else
+		{
+			for(int i = 2; i * 2 <= 23; i++) //wenn 2 * i grösser ist dann ist zahl / i sicher nicht mehr teilbar
+			{
+				if(23 % i == 0)
+				{
+					return false;
+				}
+			}
+			return true;
+		}
+		
+	}
+	
+	public boolean test2()
+	{
+		if(40 == 1 || 40 == 0) //0, 1, 2 sind Ausnahmen
+		{
+			return false;
+		}
+		if(40 == 2)
+		{
+			return false;
+		}
+		else
+		{
+			for(int i = 2; i * 2 <= 40; i++) //wenn 2 * i grösser ist dann ist zahl / i sicher nicht mehr teilbar
+			{
+				if(40 % i == 0)
+				{
+					return true;
+				}
+			}
+			return false;
+		}
+	}
 }

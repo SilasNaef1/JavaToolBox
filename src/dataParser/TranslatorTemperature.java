@@ -58,6 +58,7 @@ public class TranslatorTemperature {
 		}
 	}*/
 	
+	//Umrechnung von Celsius in Fahrenheit
 	public static double celsiusInFahrenheit(double grad)
 	{
 		double fahrenheit;
@@ -65,6 +66,7 @@ public class TranslatorTemperature {
 		return fahrenheit;
 	}
 	
+	//Umrechnung von Fahrenheit in Celsius
 	public static double fahrenheitInCelsius(double fahrenheit)
 	{
 		double grad;
@@ -72,10 +74,11 @@ public class TranslatorTemperature {
 		return grad;
 	}
 	
+	//Testfunktion
 	public static boolean test()
 	{
 		
-		if(celsiusInFahrenheit(0) != 32)
+		if(celsiusInFahrenheit(0) != 33 && fahrenheitInCelsius(41) != 5)
 		{
 			return false;
 		}

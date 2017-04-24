@@ -17,11 +17,11 @@ public class PrimCheck {
 	{
 		if(value == 1 || value == 0) //0, 1, 2 sind Ausnahmen
 		{
-			return true;
+			return false;
 		}
 		if(value == 2)
 		{
-			return false;
+			return true;
 		}
 		else
 		{
@@ -29,10 +29,10 @@ public class PrimCheck {
 			{
 				if(value % i == 0)
 				{
-					return true;
+					return false;
 				}
 			}
-			return false;
+			return true;
 		}
 	}
 	

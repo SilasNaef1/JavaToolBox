@@ -8,15 +8,16 @@
  *  GitHubUrl: https://github.com/SilasNaef1/JavaToolBox.git
  *  Date: 13.03.2017
  *  Method: Test
- *  LastChange: Jannis
+ *  LastChange: Dueen
  *  Author: Silas
  */
 import java.math.RoundingMode;
 
-//import cryptography .*;
+import cryptography .*;
 import dataParser .*;
 import economyCalc .*;
 import mathFormulars.*;
+import runtimeCalculations.calculateRuntime;
 
 public class Main {
 
@@ -27,48 +28,32 @@ public class Main {
 	
 	public static void Test()
 	{
-		Function test = mathFormulars.Function.linearFunction(6, -1, 2, 2);
+		mathFormulars.Function.testLinearFunction();
 
 	
 		System.out.println("Testfälle Dreieck!");
 		System.out.println("______________________________________________");
-		
-		
-		System.out.println("Testfall1 Dreieck!");
+		Function test = mathFormulars.Function.linearFunction(6, -1, 2, 2);		
+	
+		calculateRuntime.setStartTime();
+		System.out.println("Testfall Rechtwinkliges Dreieck");
 		System.out.println("************************************");
-		
-		System.out.println(RightTriangle.calcArea(12.54, 21.25));	//Erwartet 133.238Berechnet Fläche vom Dreieck
-		System.out.println(RightTriangle.calcCorner(30.546));		//Erwartet 59.454Berechnet den fehlenden Winkel
-		System.out.println(RightTriangle.calcHeight(12.54, 21.25, 24.674));		//Erwartet 10.8Berechnet die Höhe vom Dreieck WENN NICHT RECHTWINKLIG IST DAS RESULTAT 0!
-		System.out.println(RightTriangle.calcHypotenuse(12.54, 21.25));		//Erwartet 24.674Berechnet die Hypotenuse vom Dreieck
-		System.out.println(RightTriangle.calcScope(12.54, 21.25, 24.674));		//Berechnet den Umfang vom Dreieck WENN NICHT RECHTWINKLIG IST DAS RESULTAT 0!
-		System.out.println(RightTriangle.calcKathete(12.54, 21.25));		//Erwartet 21.25Berechnet die fehlende Kathete vom Dreieck
-		
-		System.out.println("Testfall2 Dreieck!");
-		System.out.println("************************************");		
-		System.out.println(RightTriangle.calcArea(3, 4));			//Erwartet 6 Berechnet Fläche vom Dreieck
-		System.out.println(RightTriangle.calcCorner(53.13));			//Erwartet 36.87 Berechnet den fehlenden Winkel
-		System.out.println(RightTriangle.calcHeight(3, 4, 5));		//Erwartet 2.4 Berechnet die Höhe vom Dreieck WENN NICHT RECHTWINKLIG IST DAS RESULTAT 0!
-		System.out.println(RightTriangle.calcHypotenuse(3, 4));		//Erwartet 5 Berechnet die Hypotenuse vom Dreieck
-		System.out.println(RightTriangle.calcScope(3, 4, 5));		//Erwartet 12 Berechnet den Umfang vom Dreieck WENN NICHT RECHTWINKLIG IST DAS RESULTAT 0!
-		System.out.println(RightTriangle.calcKathete(3, 5));		    //Erwartet 4 Berechnet die fehlende Kathete vom Dreieck
-		
-		
-		System.out.println("Testfall3 Dreieck!");
-		System.out.println("************************************");		
-		System.out.println(RightTriangle.calcArea(3, 4));			//Erwartet 6 Berechnet Fläche vom Dreieck
-		System.out.println(RightTriangle.calcCorner(180));			//Erwartet 36.87 Berechnet den fehlenden Winkel
-		System.out.println(RightTriangle.calcHeight(3, 4, 5));		//Erwartet 2.4 Berechnet die Höhe vom Dreieck WENN NICHT RECHTWINKLIG IST DAS RESULTAT 0!
-		System.out.println(RightTriangle.calcHypotenuse(3, 4));		//Erwartet 5 Berechnet die Hypotenuse vom Dreieck
-		System.out.println(RightTriangle.calcScope(3, 4, 5));		//Erwartet 12 Berechnet den Umfang vom Dreieck WENN NICHT RECHTWINKLIG IST DAS RESULTAT 0!
-		System.out.println(RightTriangle.calcKathete(3, 5));		    //Erwartet 4 Berechnet die fehlende Kathete vom Dreieck
-		System.out.println("______________________________________________");
-
-		System.out.println("Ende Testfälle Dreieck!");
-		
-		
+		if(RightTriangle.test()) {
+			System.out.println("RightTriangle: " + "Passed!");
+		} else {
+			System.out.println("RightTriangle: " + "Failed!");
+		}
+	
 		System.out.println("Testfall StringToInt");
 		System.out.println("************************************");
+		
+		
+		System.out.println(StringToInt.ConvertStringToInt("123"));
+		System.out.println(StringToInt.ConvertStringToInt("Test"));
+		
+		System.out.println("Testfall Quersumme");
+		System.out.println("************************************");
+		System.out.println(QuerSumme.Quersumme(121212));
 		if(StringToInt.Test()) {
 			System.out.println("StringToInt: " + "Passed!");
 		} else {
@@ -76,16 +61,6 @@ public class Main {
 		}
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle StringToInt");
-		
-		System.out.println("Testfall Quersumme");
-		System.out.println("************************************");
-		if(mathFormulars.QuerSumme.Test()) {
-			System.out.println("Quersumme: " + "Passed!");
-		} else {
-			System.out.println("Quersumme: " + "Failed!");
-		}
-		System.out.println("______________________________________________");
-		System.out.println("Ende Testfälle Quersumme");
 		
 		
 		System.out.println("Testfall Runden");
@@ -97,6 +72,7 @@ public class Main {
 		}
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle Runden");
+		
 		System.out.println("Testfall Mehrwertsteuer");
 		System.out.println("************************************");
 		if(mathFormulars.ValueAddedTaxVAT.Test()) {
@@ -107,6 +83,17 @@ public class Main {
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle Runden");
 		
+		System.out.println("Testfall CaesarCode");
+		System.out.println("************************************");
+		
+		if(cryptography.CaesarCode.Test()) {
+			System.out.println("CaesarCode: " + "Passed!");
+		} else {
+			System.out.println("CaesarCode: " + "Failed!");
+		}
+		
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle CaesarCode");
 		
 		System.out.println("Testfall BreakEven");
 		System.out.println("************************************");
@@ -118,14 +105,68 @@ public class Main {
 		}
 		System.out.println("______________________________________________");
 		System.out.println("Ende Testfälle BreakEven");
+
 		
+		System.out.println("Testfall Quersumme");
+		System.out.println("************************************");
+		if(mathFormulars.QuerSumme.Test()) {
+			System.out.println("Quersumme: " + "Passed!");
+		} else {
+			System.out.println("Quersumme: " + "Failed!");
+		}
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle Quersumme");
 		if(	TranslatorTemperature.test()){
 			System.out.println("TranslatorTemperatureTest Passed!");
 		}
 		else{
 			System.out.println("TranslatorTemperatureTest Failed!");
 		}
+		System.out.println("Testfall Einholzeitunkt");
+		System.out.println("************************************");
+		if(mathFormulars.EinholzeitPunkt.test()) {
+			System.out.println("Einholzeitpunkt: " + "Passed!");
+		} else {
+			System.out.println("Einholzeitpunkt: " + "Failed!");
+		}
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle Quersumme");
+
+		System.out.println("Testfall Datenanlyse");
+		System.out.println("************************************");
+		Datenanalyse analyse = new Datenanalyse(5, 16, 1, 2, 6);
+		if(analyse.Test()) {
+			System.out.println("Datenanalyse: " + "Passed!");
+		} else {
+			System.out.println("Datenanalyse: " + "Failed!");
+		}
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle Datenanalyse");
 	
+		calculateRuntime.setEndTime();
+		calculateRuntime.Output();
+		
+		System.out.println("Testfall LinearFunction");
+		System.out.println("************************************");
+		if(	mathFormulars.Function.testLinearFunction()){
+			System.out.println("LinearFunctionTest Passed!");
+		}
+		else{
+			System.out.println("LinearFunctionTest failed!");
+		}
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle LinearFunction");
+		
+		System.out.println("Testfall TranslatorKmhToMs");
+		System.out.println("************************************");
+		if(	dataParser.TranslatorKmhToMs.testTranslation()){
+			System.out.println("Translator test Passed!");
+		}
+		else{
+			System.out.println("Translator test failed!");
+		}
+		System.out.println("______________________________________________");
+		System.out.println("Ende Testfälle TranslatorKmhToMs");
 
 	}
 

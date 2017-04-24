@@ -15,53 +15,81 @@ package mathFormulars;
 
 public class Function {
 	
-	private double a,b,c;
-	private String function;
+	protected double a,b;
+	protected String function;
 	
-	public Function(double a, double b, String result)
+	public Function(){}
+	
+	public Function(double a, double b) //Function as an object
 	{
 		this.a = a;
 		this.b = b;
-		this.function = result;
-		System.out.println(result);
+		this.function = createFunction(a,b); // With the two values a and b the method creates the associated function
+		System.out.println(function);
 	}
 	
-	public static Function linearFunction(double x1, double y1, double x2, double y2)
+	public static Function linearFunction(double x1, double y1, double x2, double y2) //Static method, which returns a function object
 	{
-		if(x2==x1 && y2==y1)
+		if(x2==x1 && y2==y1) //if the two points are identical
 		{
 			return null;
 		}
 		else
 		{
-			double a = (y2-y1)/(x2-x1);
-			double b = (x2*y1-x1*y2)/(x2-x1);
-			String result;
-		
-			if(b<=0)
-			{
-				if(b<0)
-				{
-					result = "y = "+a+"x - "+b;
-				}
-				else
-				{
-					result = "y = "+a+"x";
-				}
-			}
-			else
-			{
-				result = "y = "+a+"x + "+b;
-			}
-			return new Function(a,b,result);
+			double a = (y2-y1)/(x2-x1);  		//calculation of the coefficient a
+			double b = (x2*y1-x1*y2)/(x2-x1);	//calculation of the coefficient b
+			return new Function(a,b); //return of a new Function object
 		}
 	}
 	
-	public static boolean Test()
+	public static String createFunction(double a, double b) //Static method to create the function string
 	{
-		Function func = linearFunction(-4,2,-1,2);
-		System.out.println(func.function);
-		return true;
+		if(b<=0) // depending of the values of a and b, the String gets the right format
+		{
+			if(b<0)
+			{
+				return "y = "+a+"x"+b; //example: y = 2x-3
+			}
+			else
+			{
+				return "y = "+a+"x"; // example: y = 2x
+			}
+		}
+		else
+		{
+			return "y = "+a+"x + "+b; // example: y = 2x+3
+		}
 	}
+	
+	public static boolean testLinearFunction()
+	{
+		Function func = linearFunction(-4,-1,2,-10);
+		if(func.getA() == -1.5)
+		{
+			System.out.println(func.function);
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+		
+	}
+
+	public double getA() {
+		return a;
+	}
+	
+	public void setA(double a) {
+		this.a = a;
+	}
+
+	public double getB() {
+		return b;
+	}
+
+	public void setB(double b) {
+		this.b = b;
+	}	
 
 }

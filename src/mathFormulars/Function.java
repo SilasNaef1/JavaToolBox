@@ -61,6 +61,8 @@ public class Function {
 		}
 	}
 	
+	
+	
 	public static boolean testLinearFunction()
 	{
 		Function func = linearFunction(-4,-1,2,-10);

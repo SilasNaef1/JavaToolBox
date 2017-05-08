@@ -37,7 +37,7 @@ public class PrimCheck {
 	}
 	
 	
-	public boolean test()
+	public static boolean test()
 	{
 		if(23 == 1 || 23 == 0) //0, 1, 2 sind Ausnahmen
 		{
